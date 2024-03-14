@@ -1,0 +1,49 @@
+{
+	"name": "variable-naming-conversion",
+	"displayName": "Variable naming conversion",
+	"description": "Used for translation and conversion of variable names",
+	"version": "0.0.2",
+	"engines": {
+		"vscode": "^1.87.0"
+	},
+	"icon": "image/theme.jpg",
+	"publisher": "MurphyZhou",
+	"repository": {},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onEditorSelectionChange"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "variable-naming-conversion.variableNamingConversion",
+				"title": "Variable naming conversion"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "variable-naming-conversion.variableNamingConversion",
+				"key": "ctrl+shift+l",
+				"mac": "cmd+shift+l",
+				"when": "editorTextFocus"
+			}
+		]
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "pnpm run lint",
+		"test": "vscode-test"
+	},
+	"devDependencies": {
+		"@types/mocha": "^10.0.6",
+		"@types/node": "18.x",
+		"@types/vscode": "^1.87.0",
+		"@vscode/test-cli": "^0.0.6",
+		"@vscode/test-electron": "^2.3.9",
+		"eslint": "^8.56.0",
+		"typescript": "^5.3.3"
+	}
+}
