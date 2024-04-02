@@ -17,7 +17,7 @@ function toWordGroup(englishText) {
 				}
 			}).join('')
 }
-/[a-z]*[A-Z]/
+
 function toSentence(wordGroup) { 
 	const isCamelCased = /^[a-z]+([A-Z]+[a-z]+)*$/
 	const isUnderlineCased=/\_*([a-z]|[A-Z])+(\_+([a-z]|[A-Z])+)*$/

@@ -2,7 +2,7 @@
 	"name": "variable-naming-conversion",
 	"displayName": "Variable naming conversion",
 	"description": "Used for translation and conversion of variable names",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"engines": {
 		"vscode": "^1.87.0"
 	},
